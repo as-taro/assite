@@ -1,0 +1,261 @@
+@charset "UTF-8";
+
+/* トップ画像 */
+.top-img {
+  height: 380px;
+  width: 100%;
+  text-align: center;
+  background-size: cover;
+}
+
+.top-img1 {
+  background: url(../images/top1.jpg) no-repeat 50% center;
+  background-size: cover;
+}
+.top-img2 {
+  background: url(../images/top2.jpg) no-repeat 50% center;
+  background-size: cover;
+}
+.top-img3 {
+  background: url(../images/top3.jpg) no-repeat 50% center;
+  background-size: cover;
+}
+
+/* キャッチコピー */
+/* ヘッダー画像にキャッチコピーを重ねる */
+.top {
+  position: relative;
+  padding-top: 1px;
+}
+
+.catch-phrase1 {
+  position: absolute;
+  margin: auto;
+  top: 0px;
+  bottom: 250px;
+  right: 15px;
+}
+
+/* 概要 */
+.gaiyou {
+  border: solid 1px #dddddd;
+  background-color: #ffffff;
+  padding: 10px 5px;
+  margin-bottom: 20px;
+}
+
+
+.gaiyou a:hover  {opacity: 0.8}
+
+.h1-title {
+  padding: 8px 0 8px 20px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #1C5587;
+  margin-bottom: 5px;
+  text-align:center;
+  
+}
+.h1-title span {
+  display: inline-block;
+  border-left: 4px solid #ffffff;
+  padding-left: 20px;
+  margin-left: -20px;
+
+}
+
+.gaiyou p {
+  padding: 5px 15px 0 15px;
+}
+
+/* お知らせ */
+.news {
+  padding: 15px 20px;
+  border: solid 1px #dddddd;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.news h1 {border-bottom: solid 2px #1d2088;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #666666}
+
+.news li a {display: block;
+  padding: 5px 0;
+  border-top: dotted 1px #dddddd;
+  color: #000000;
+  font-size: 12px;
+}
+
+.news li a:hover  {background-color: #eeeeee}
+.news li:last-child a {border-bottom: dotted 1px #dddddd;}
+.news time {
+  display: table-cell;
+  color: #888888;
+  width: 60px;
+  text-align: center;
+}
+.news .text {
+  display: table-cell;
+  width: auto;
+  margin-left: 60px;
+}
+
+
+/* サイドコンテンツ */
+
+.banner h1 {
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.banner li a:hover  {opacity: 0.8}
+
+.banner-recruit, .banner-company {
+  margin-bottom: 20px;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #1c6787;
+  border-radius: 8px;
+}
+
+.recruit-info h1{
+  background-color: #5EA9DD;
+  margin-left: 20px;
+}
+
+.recruit-info p {
+  padding: 5px 15px 0 15px;
+}
+
+.right2 {
+  float: right;
+  width: 80%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.left2 {
+  float: left;
+  width: 20%;
+  font-size: 32px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.fa-wrapper {
+  position:relative;
+}
+
+.fa-wrapper:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+.left2 .fa-envelope {
+  position:absolute;
+  top: 50%;
+  left: 10%;
+  margin-top: -16px;
+  margin-left: -19px;
+}
+.left2 .fa-laptop {
+  position:absolute;
+  top: 50%;
+  left: 10%;
+  margin-top: -16px;
+  margin-left: -20px;
+}
+.left2 .fa-map-marker {
+  position:absolute;
+  top: 50%;
+  left: 10%;
+  margin-top: -16px;
+  margin-left: -12px;
+}
+
+/* 補足説明 */
+.follow-info {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #e6e6e6;
+  font-size: 14px;
+  text-align: center;
+}
+
+.follow-info {
+  position: relative;
+}
+.follow-info:after {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(221, 221, 221, 0);
+  border-top-color: #e6e6e6;
+  border-width: 15px;
+  margin-left: -15px;
+}
+
+/* ボックスの左右 */
+.contents-box {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* ########### 599px以下 ########### */
+@media (max-width: 599px) {
+
+/* ナビゲーション */
+.menu li a {
+  padding: 10px 7px;
+  font-size:16px;
+}
+
+/* キャッチコピー */
+.catch-phrase1,
+.catch-phrase2,
+.catch-phrase3 {
+  position: absolute;
+  min-width: 50%;
+  width: 60%;
+  top: 0px;
+  bottom: 250px;
+  left: 15px;
+  right: 0;
+}
+}
+/* ########### 768px以上 ########### */
+@media (min-width: 768px) {
+
+.box-left, .box-right {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left1 {
+  float: left;
+  width: 70%;
+  padding-right: 35px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.right1 {
+  float: right;
+  width: 30%;
+}
+
+}

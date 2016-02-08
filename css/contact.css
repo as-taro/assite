@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/* キャッチフレーズ */
+.catch-phrase {
+  margin: 10px;
+  padding: 5px 10px;
+  background-color: rgba(255,255,255,0.7);
+}
+/* ヘッダー画像にキャッチコピーを重ねる */
+.head-img-wrapper {position: relative}
+
+.catch-phrase {
+  position: absolute;
+  top: 0px;
+}
+
+/*----- 個人情報保護方針 -----*/
+
+.sign {
+  float: right;
+  text-align: left;
+}
+.consultation {
+  border-spacing: 10px 0px;
+}
+
+table > tr > td {
+  background-color:#ccc;
+  color: #ccc;
+}
+
+/*----- 個人情報の取り扱いについて -----*/
+

@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+.aisatsu1 p {
+  font-size: 14px;
+  margin-bottom:10px;
+}
+
+.aisatsu1 {
+  padding-top:25px;
+  padding-bottom: 25px;
+}
+
+.aisatsu1 .fujiwara1-img {
+  float: left;
+  max-width: 28%;
+  margin-right:2%;
+}
+
+.aisatsu1-2 {
+  float: right;
+  width: 70%;
+}
+
+.aisatsu1:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.sign {
+  display: block;
+  width: 248px;
+  height: auto;
+  padding-top:20px;
+  padding-bottom:10px;
+  margin-top:10px;
+  float: right;
+}

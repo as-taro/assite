@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+.access1 {
+  height:450px;
+  margin-bottom: 70px;
+}
+.access2 {
+  height:450px;
+  margin-bottom: 40px;
+}
+.head-title {
+  display: block;
+  float:left;
+}
+.phone-number {
+  display: block;
+  float:right;
+  padding-top:2px;
+  padding-right:10px;
+}
+
+.phone-number i {
+  margin-right: 10px;
+}
+
+.phone-number:after {
+  content: "";
+  display: block;
+  clear: both;
+}

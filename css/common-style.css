@@ -1,0 +1,276 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  font-family:"Roboto Regular","Helvetica Neue",Helvetica,Arial,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","Meiryo","メイリオ","ＭＳ ゴシック",sans-serif;
+  font-size:14px;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+  font-weight: normal;
+}
+
+a {text-decoration: none}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li a {
+  display: block;
+}
+
+a img {border: none}
+
+/* クリアフィックス */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* タイトルロゴ */
+.logo a:hover {
+  opacity: 0.8;
+}
+
+/* フッターメニュー */
+.box-footer-inner {
+  padding: 10px 10px 0 10px;
+  margin: auto;
+}
+
+.footer {
+  background-color: #ffffff;
+  margin:auto;
+  max-width: 530px;
+}
+
+.footer-group {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.footer li a {
+  padding: 0px 10px;
+  margin: 5px 0px;
+  color: #212121;
+  font-size: 12px;
+  border-left: solid 1px #dfdfdf;
+}
+
+.footer li:first-child a {
+  border: none;
+}
+
+.footer li a:hover  {opacity: 0.8}
+
+.footer li{
+  float: left;
+  width: auto;
+}
+
+.footer ul:after  {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* コピーライト */
+.copyright {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #ffffff;
+  background-color: #1c2872;
+}
+
+.copyright p {
+
+  text-align: center;
+}
+
+/* ボックスの左右 */
+.header {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*footer領域をバーの形にする */
+.box-footer {
+  border-top: solid 3px #1c2872
+}
+
+/* ボックスの上下 */
+.header {padding-top: 14px}
+
+/* BOX Aの下に罫線を挿入 */
+.header {
+  border-bottom: solid 3px #1d2088;
+}
+
+
+/* ########### 359px以下 ########### */
+@media (max-width: 359px) {
+
+/* サイト名 */
+.logo img {
+  width: 241px;
+  height: auto;
+}
+}
+
+
+/* ########### 599px以下 ########### */
+@media (max-width: 599px) {
+
+/* ナビゲーション */
+.menu li a {
+  padding: 10px 7px;
+  font-size:16px;
+}
+}
+
+/* ########### 767px以下 ########### */
+@media (max-width: 767px) {
+
+/* トグルボタン */
+#menubtn {
+  padding: 6px 12px;
+  border: solid 1px #aaaaaa;
+  border-radius: 5px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+
+#menubtn:hover  {background-color: #dddddd}
+
+#menubtn:focus  {outline: none}
+
+#menubtn i {
+  color: #888888;
+  font-size: 24px;
+}
+
+#menubtn span {
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+/* ナビゲーションメニュー（縦並び） */
+.menu {display: none}
+
+.menu li a {
+  display: block;
+  padding: 10px 5px;
+  border-top: solid 1px #f2f2f2;
+  color: #212121;
+  font-size: 15px;
+}
+
+.menu li a:hover {background-color: #eeeeee}
+
+}
+
+
+/* ########### 768px以上 ########### */
+@media (min-width: 768px) {
+
+/* トグルボタン */
+#menubtn {display: none}
+
+/* */
+.logo h1 {padding-left: 15px}
+
+/* ナビゲーション */
+#menu {display: block !important}
+
+.menu li a {
+  display: block;
+  margin-top: 11px;
+  padding: 0px 15px;
+  text-decoration: none;
+  border-right: solid 1px #ccc;
+  color: #020202;
+  font-size: 13px;
+}
+
+.menu li:last-child a {
+  border: none;
+}
+
+.menu li a:hover  {
+  color: #1d2088;
+}
+
+.menu ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.menu li {
+  float: left;
+  width: auto;
+}
+
+/* ヘッダーメニューの幅*/
+.box-header-inner {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* フッターを中央によせる */
+.footer ul {
+  width: 455px;
+  margin: 0px auto;
+}
+
+/* 全体の横幅を固定 */
+.box-main {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  background-color: #fafafa;
+}
+
+.box-main-inner {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+}
+
+.box-footer-inner {
+  max-width: 980px;
+}
+
+/* BOX1とBOX2を横に並べる設定 */
+.box-header1 {
+  float: left;
+  width: auto;
+}
+
+.box-header2 {
+  float: right;
+  width: auto;
+}
+}
+
+
+/* ########### 1190px以上 ########### */
+@media (min-width: 1190px) {
+
+.menu li a  {display: block;
+  padding: 0px 20px;
+}
+}

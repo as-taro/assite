@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/* ヘッダー画像にキャッチコピーを重ねる */
+.head-img-wrapper {position: relative}
+
+.catch-phrase {
+  position: absolute;
+  top: 0px;
+}
+
+
+
+/* ########### 767px以下 ########### */
+@media (max-width: 767px) {
+
+.head-img-wrapper {
+  max-width: none;
+  height: 100%;
+  float:left;
+  overflow: hidden;
+}
+}
