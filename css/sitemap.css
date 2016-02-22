@@ -41,20 +41,14 @@
   display: block;
   clear: both;
 }
-
 .sitemap li {
   float: left;
   width: auto;
-  margin-left: 15px;
 }
 .sitemap li a {
- display: inline;
-}
-.sitemap li:before {
-  font-family: FontAwesome;
-  content: '\f0da';
-  color: #1c6787;
-  padding-right:5px;
+  display: inline;
+  padding: 0 10px;
+  border-left: solid 1px #cccccc;
 }
 
 /* ########### 768px以上 ########### */
